@@ -1,0 +1,10 @@
+.hamburg{
+    margin: 0px;
+    position: relative;
+    transform: rotate(90deg);
+    font-size: 25px;
+    bottom: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--buttons);
+}

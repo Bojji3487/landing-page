@@ -1,0 +1,147 @@
+:root {
+    --primary: #f7f5ec;
+    --secondary: rgba(247, 245, 236);
+    --buttons: #ce252e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    align-items: center;
+    z-index: 6;
+    padding: 0 74px;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color for better visibility */
+}
+
+.bg {
+    position: absolute;
+    display: inline;
+    z-index: -1000;
+    opacity: 85%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Poppins";
+    min-height: 100vh;
+    background-color: #f7f5ec;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    transition: 0.1s ease-in;
+}
+
+nav a:hover{
+    color: var(--buttons);
+    font-weight: 500;
+}
+
+.nav-list {
+    margin: 0 130px 0 140px;
+    font-size: 20px;
+    display: flex;
+    gap: 25px;
+    align-items: center; /* Center items vertically */
+}
+
+.HomeButton {
+    text-shadow: 0px 1px 0px black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    padding: 10px 0; /* Adjust padding for better vertical alignment */
+    border-radius: 28px;
+    color: white;
+    background-color: #d52128;
+}
+
+.HomeButton:hover{
+        color: white;
+        font-weight: 500;
+    
+}
+
+.nav-icon {
+    transform: scale(1.2);
+}
+
+.textArea {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 400px;
+    margin: 10px;
+}
+
+.topText {
+    text-shadow: 1px 1px 1px white;
+    color: #cc202b;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.middleText {
+    line-height: 40px;
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px white;
+}
+
+.bottomText {
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+button {
+    cursor: pointer;
+    text-shadow: black;
+    margin-top: 20px;
+    background-color: #cc202b;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transition: 0.1s ease;
+    color: black;
+    font-weight: 500;
+    background: #f1888d;
+}
+
+.blanket {
+    position: absolute;
+    display: inline;
+    left: 0;
+    z-index: 5;
+    opacity: 40%;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    height: 85px;
+}
